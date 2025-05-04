@@ -36,12 +36,5 @@ def send_mem(message):
         image_url = get_duck_image_url()
         bot.reply_to(message, image_url)
 
-@bot.message_handler(commands=['hello'])
-def hello(message):
-    chat_id = message.chat.id
-    text = (
-       f'да иди ты нахуй, {message.from_user.first_name}!🤑')
-
     
-
 bot.infinity_polling()
